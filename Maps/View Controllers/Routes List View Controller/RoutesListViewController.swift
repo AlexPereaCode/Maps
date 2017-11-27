@@ -8,28 +8,64 @@
 
 import UIKit
 
-class RoutesListViewController: UIViewController {
+class RoutesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: - IBOutlets
+    @IBOutlet private var tableView: UITableView!
+    
+    // MARK: - Properties
+    private var locationsDataArray = [LocationData]()
+    private var isFirstLoad: Bool = true
+    
+    // MARK: - Life Cycle Controller
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        initializeTableView()
+        registerCell()
+        getLocationsData()
+        self.title = "Routes"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - Private Functions
+    private func initializeTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 234
+        tableView.backgroundColor = #colorLiteral(red: 0.8964430094, green: 0.8964430094, blue: 0.8964430094, alpha: 1)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 12, 0)
     }
-    */
+    
+    private func registerCell() {
+        let nibCell = UINib(nibName: RoutesTableViewCell.getNibName(), bundle: nil)
+        tableView.register(nibCell, forCellReuseIdentifier: RoutesTableViewCell.getNibName())
+    }
+    
+    private func getLocationsData() {
+        locationsDataArray = UserDefaultsHelper.getLocations().reversed()
+        tableView.reloadData()
+    }
 
+
+    // MARK: - TableView Data Source & Delegate
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return locationsDataArray.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: RoutesTableViewCell.getNibName(), for: indexPath) as! RoutesTableViewCell
+        cell.setCell(data: locationsDataArray[indexPath.row])
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailRouteViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailRouteViewController") as! DetailRouteViewController
+        detailRouteViewController.setLocationData(data: locationsDataArray[indexPath.row])
+        self.navigationController?.pushViewController(detailRouteViewController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }

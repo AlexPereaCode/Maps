@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FA2705881FC8A91D00E2BD8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2705871FC8A91D00E2BD8F /* AppDelegate.swift */; };
-		FA27058A1FC8A91D00E2BD8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2705891FC8A91D00E2BD8F /* ViewController.swift */; };
+		FA27058A1FC8A91D00E2BD8F /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2705891FC8A91D00E2BD8F /* MainMapViewController.swift */; };
 		FA27058D1FC8A91D00E2BD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA27058B1FC8A91D00E2BD8F /* Main.storyboard */; };
 		FA27058F1FC8A91D00E2BD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27058E1FC8A91D00E2BD8F /* Assets.xcassets */; };
 		FA2705921FC8A91D00E2BD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2705901FC8A91D00E2BD8F /* LaunchScreen.storyboard */; };
 		FA27059D1FC8A91D00E2BD8F /* MapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA27059C1FC8A91D00E2BD8F /* MapsTests.swift */; };
 		FA2705A81FC8A91D00E2BD8F /* MapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2705A71FC8A91D00E2BD8F /* MapsUITests.swift */; };
+		FA608F5E1FC96F5D00ECCE7F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA608F5D1FC96F5D00ECCE7F /* CustomButton.swift */; };
+		FA608F611FC972D200ECCE7F /* TrackingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA608F601FC972D200ECCE7F /* TrackingButton.swift */; };
+		FA7722E01FC9B9B900A48B10 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7722DF1FC9B9B900A48B10 /* UserDefaultsHelper.swift */; };
+		FA7722E21FC9CCB100A48B10 /* MainMapAlertsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7722E11FC9CCB100A48B10 /* MainMapAlertsExtension.swift */; };
+		FA7722E41FC9CECA00A48B10 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7722E31FC9CECA00A48B10 /* LocationData.swift */; };
+		FA7CDCAB1FCAF16A00E771BF /* MoreInfoRouteCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CDCAA1FCAF16A00E771BF /* MoreInfoRouteCardView.swift */; };
+		FA7CDCAD1FCAF17700E771BF /* MoreInfoRouteCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7CDCAC1FCAF17700E771BF /* MoreInfoRouteCardView.xib */; };
+		FA7CDCAF1FCB096C00E771BF /* DetailRouteExtractStatisticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CDCAE1FCB096C00E771BF /* DetailRouteExtractStatisticsExtension.swift */; };
+		FA7CDCB11FCB1D6700E771BF /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7CDCB01FCB1D6700E771BF /* ArrayExtensions.swift */; };
+		FA8EFAC11FC9EA1E00450CD1 /* RoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EFAC01FC9EA1E00450CD1 /* RoutesListViewController.swift */; };
+		FA8EFAC51FC9FA0D00450CD1 /* RoutesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EFAC31FC9FA0D00450CD1 /* RoutesTableViewCell.swift */; };
+		FA8EFAC61FC9FA0D00450CD1 /* RoutesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8EFAC41FC9FA0D00450CD1 /* RoutesTableViewCell.xib */; };
+		FA8EFAC81FC9FAB900450CD1 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EFAC71FC9FAB900450CD1 /* CustomView.swift */; };
+		FA8EFACB1FCA32B000450CD1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EFACA1FCA32B000450CD1 /* DateExtensions.swift */; };
+		FA8EFACE1FCA4C3000450CD1 /* DetailRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8EFACD1FCA4C3000450CD1 /* DetailRouteViewController.swift */; };
+		FAE3E5311FC9868600B77750 /* MainMapLocationManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3E5301FC9868600B77750 /* MainMapLocationManagerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +52,7 @@
 /* Begin PBXFileReference section */
 		FA2705841FC8A91D00E2BD8F /* Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2705871FC8A91D00E2BD8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA2705891FC8A91D00E2BD8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA2705891FC8A91D00E2BD8F /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		FA27058C1FC8A91D00E2BD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA27058E1FC8A91D00E2BD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2705911FC8A91D00E2BD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,24 @@
 		FA2705A31FC8A91D00E2BD8F /* MapsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2705A71FC8A91D00E2BD8F /* MapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsUITests.swift; sourceTree = "<group>"; };
 		FA2705A91FC8A91D00E2BD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4BC1661FC9A6FA00C7E81C /* Maps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Maps.entitlements; sourceTree = "<group>"; };
+		FA608F5D1FC96F5D00ECCE7F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FA608F601FC972D200ECCE7F /* TrackingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingButton.swift; sourceTree = "<group>"; };
+		FA7722DF1FC9B9B900A48B10 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		FA7722E11FC9CCB100A48B10 /* MainMapAlertsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapAlertsExtension.swift; sourceTree = "<group>"; };
+		FA7722E31FC9CECA00A48B10 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		FA7CDCA71FCAD9B600E771BF /* Barcelona - Spain.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Barcelona - Spain.gpx"; sourceTree = "<group>"; };
+		FA7CDCAA1FCAF16A00E771BF /* MoreInfoRouteCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoRouteCardView.swift; sourceTree = "<group>"; };
+		FA7CDCAC1FCAF17700E771BF /* MoreInfoRouteCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreInfoRouteCardView.xib; sourceTree = "<group>"; };
+		FA7CDCAE1FCB096C00E771BF /* DetailRouteExtractStatisticsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouteExtractStatisticsExtension.swift; sourceTree = "<group>"; };
+		FA7CDCB01FCB1D6700E771BF /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		FA8EFAC01FC9EA1E00450CD1 /* RoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesListViewController.swift; sourceTree = "<group>"; };
+		FA8EFAC31FC9FA0D00450CD1 /* RoutesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesTableViewCell.swift; sourceTree = "<group>"; };
+		FA8EFAC41FC9FA0D00450CD1 /* RoutesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutesTableViewCell.xib; sourceTree = "<group>"; };
+		FA8EFAC71FC9FAB900450CD1 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		FA8EFACA1FCA32B000450CD1 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		FA8EFACD1FCA4C3000450CD1 /* DetailRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouteViewController.swift; sourceTree = "<group>"; };
+		FAE3E5301FC9868600B77750 /* MainMapLocationManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapLocationManagerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +115,7 @@
 				FA27059B1FC8A91D00E2BD8F /* MapsTests */,
 				FA2705A61FC8A91D00E2BD8F /* MapsUITests */,
 				FA2705851FC8A91D00E2BD8F /* Products */,
+				FA7722DB1FC9B7B500A48B10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +132,14 @@
 		FA2705861FC8A91D00E2BD8F /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				FA4BC1661FC9A6FA00C7E81C /* Maps.entitlements */,
 				FA2705871FC8A91D00E2BD8F /* AppDelegate.swift */,
-				FA2705891FC8A91D00E2BD8F /* ViewController.swift */,
+				FA608F621FC9859D00ECCE7F /* View Controllers */,
+				FA7722DE1FC9B99300A48B10 /* Helpers */,
+				FA608F5C1FC96EE100ECCE7F /* UI Custom Elements */,
+				FA7722E51FC9CED700A48B10 /* Models */,
+				FA8EFAC91FCA328900450CD1 /* Extensions */,
+				FA7CDCA81FCAD9D300E771BF /* GPX */,
 				FA27058B1FC8A91D00E2BD8F /* Main.storyboard */,
 				FA27058E1FC8A91D00E2BD8F /* Assets.xcassets */,
 				FA2705901FC8A91D00E2BD8F /* LaunchScreen.storyboard */,
@@ -123,6 +164,121 @@
 				FA2705A91FC8A91D00E2BD8F /* Info.plist */,
 			);
 			path = MapsUITests;
+			sourceTree = "<group>";
+		};
+		FA608F5C1FC96EE100ECCE7F /* UI Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FA608F5F1FC9727000ECCE7F /* Elements Base */,
+				FA608F601FC972D200ECCE7F /* TrackingButton.swift */,
+			);
+			path = "UI Custom Elements";
+			sourceTree = "<group>";
+		};
+		FA608F5F1FC9727000ECCE7F /* Elements Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA608F5D1FC96F5D00ECCE7F /* CustomButton.swift */,
+				FA8EFAC71FC9FAB900450CD1 /* CustomView.swift */,
+			);
+			path = "Elements Base";
+			sourceTree = "<group>";
+		};
+		FA608F621FC9859D00ECCE7F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA608F631FC985B000ECCE7F /* Main Map View Controller */,
+				FA8EFABF1FC9E97200450CD1 /* Routes List View Controller */,
+				FA8EFACC1FCA4BDE00450CD1 /* Detail Route View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FA608F631FC985B000ECCE7F /* Main Map View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA2705891FC8A91D00E2BD8F /* MainMapViewController.swift */,
+				FAE3E5301FC9868600B77750 /* MainMapLocationManagerExtension.swift */,
+				FA7722E11FC9CCB100A48B10 /* MainMapAlertsExtension.swift */,
+			);
+			path = "Main Map View Controller";
+			sourceTree = "<group>";
+		};
+		FA7722DB1FC9B7B500A48B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA7722DE1FC9B99300A48B10 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7722DF1FC9B9B900A48B10 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA7722E51FC9CED700A48B10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7722E31FC9CECA00A48B10 /* LocationData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7CDCA81FCAD9D300E771BF /* GPX */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CDCA71FCAD9B600E771BF /* Barcelona - Spain.gpx */,
+			);
+			path = GPX;
+			sourceTree = "<group>";
+		};
+		FA7CDCA91FCAF0FC00E771BF /* More Info Route Card */ = {
+			isa = PBXGroup;
+			children = (
+				FA7CDCAA1FCAF16A00E771BF /* MoreInfoRouteCardView.swift */,
+				FA7CDCAC1FCAF17700E771BF /* MoreInfoRouteCardView.xib */,
+			);
+			path = "More Info Route Card";
+			sourceTree = "<group>";
+		};
+		FA8EFABF1FC9E97200450CD1 /* Routes List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EFAC01FC9EA1E00450CD1 /* RoutesListViewController.swift */,
+				FA8EFAC21FC9F9D800450CD1 /* Routes Cell */,
+			);
+			path = "Routes List View Controller";
+			sourceTree = "<group>";
+		};
+		FA8EFAC21FC9F9D800450CD1 /* Routes Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EFAC31FC9FA0D00450CD1 /* RoutesTableViewCell.swift */,
+				FA8EFAC41FC9FA0D00450CD1 /* RoutesTableViewCell.xib */,
+			);
+			path = "Routes Cell";
+			sourceTree = "<group>";
+		};
+		FA8EFAC91FCA328900450CD1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EFACA1FCA32B000450CD1 /* DateExtensions.swift */,
+				FA7CDCB01FCB1D6700E771BF /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA8EFACC1FCA4BDE00450CD1 /* Detail Route View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA8EFACD1FCA4C3000450CD1 /* DetailRouteViewController.swift */,
+				FA7CDCAE1FCB096C00E771BF /* DetailRouteExtractStatisticsExtension.swift */,
+				FA7CDCA91FCAF0FC00E771BF /* More Info Route Card */,
+			);
+			path = "Detail Route View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +350,17 @@
 					FA2705831FC8A91D00E2BD8F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					FA2705971FC8A91D00E2BD8F = {
 						CreatedOnToolsVersion = 9.1;
@@ -233,6 +400,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA2705921FC8A91D00E2BD8F /* LaunchScreen.storyboard in Resources */,
+				FA8EFAC61FC9FA0D00450CD1 /* RoutesTableViewCell.xib in Resources */,
+				FA7CDCAD1FCAF17700E771BF /* MoreInfoRouteCardView.xib in Resources */,
 				FA27058F1FC8A91D00E2BD8F /* Assets.xcassets in Resources */,
 				FA27058D1FC8A91D00E2BD8F /* Main.storyboard in Resources */,
 			);
@@ -259,8 +428,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA27058A1FC8A91D00E2BD8F /* ViewController.swift in Sources */,
+				FA7722E41FC9CECA00A48B10 /* LocationData.swift in Sources */,
+				FA7722E01FC9B9B900A48B10 /* UserDefaultsHelper.swift in Sources */,
+				FA7722E21FC9CCB100A48B10 /* MainMapAlertsExtension.swift in Sources */,
+				FA7CDCAB1FCAF16A00E771BF /* MoreInfoRouteCardView.swift in Sources */,
+				FA27058A1FC8A91D00E2BD8F /* MainMapViewController.swift in Sources */,
 				FA2705881FC8A91D00E2BD8F /* AppDelegate.swift in Sources */,
+				FA8EFACB1FCA32B000450CD1 /* DateExtensions.swift in Sources */,
+				FA608F611FC972D200ECCE7F /* TrackingButton.swift in Sources */,
+				FA8EFAC81FC9FAB900450CD1 /* CustomView.swift in Sources */,
+				FAE3E5311FC9868600B77750 /* MainMapLocationManagerExtension.swift in Sources */,
+				FA608F5E1FC96F5D00ECCE7F /* CustomButton.swift in Sources */,
+				FA7CDCAF1FCB096C00E771BF /* DetailRouteExtractStatisticsExtension.swift in Sources */,
+				FA8EFAC11FC9EA1E00450CD1 /* RoutesListViewController.swift in Sources */,
+				FA8EFACE1FCA4C3000450CD1 /* DetailRouteViewController.swift in Sources */,
+				FA8EFAC51FC9FA0D00450CD1 /* RoutesTableViewCell.swift in Sources */,
+				FA7CDCB11FCB1D6700E771BF /* ArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

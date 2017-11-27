@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable class CustomButton: UIButton {
 
     // MARK: - Inspectable Properties From Interface Builder
-    
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
